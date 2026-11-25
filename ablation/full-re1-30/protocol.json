@@ -1,0 +1,172 @@
+{
+  "design": "Full component and internal-horizon studies from first revision APIN-D-26-04556-RE1_nom.docx, Sections 5.2.1-5.2.2.",
+  "arms": [
+    "ma",
+    "m2",
+    "fg",
+    "m4",
+    "t4",
+    "t1",
+    "t8",
+    "t16",
+    "t32"
+  ],
+  "labels": {
+    "ma": "A: global MHA + ANN",
+    "m2": "B: global MHA + SNN (T=4)",
+    "fg": "C: fully connected GAT + SNN (T=4)",
+    "m4": "D: conflict GAT + ANN",
+    "t4": "E: conflict GAT + SNN (T=4)",
+    "t1": "conflict GAT + SNN (T=1)",
+    "t8": "conflict GAT + SNN (T=8)",
+    "t16": "conflict GAT + SNN (T=16)",
+    "t32": "conflict GAT + SNN (T=32)"
+  },
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "train": {
+    "size": "15x15",
+    "updates": 256,
+    "episodes_per_update": 4,
+    "episodes_per_model": 1024,
+    "pool": 100,
+    "episode_sampling": "Python Random(7000 + seed), uniform with replacement, same ordered draws within each seed",
+    "lr": 0.001,
+    "ppo_epochs": 10,
+    "minibatch": 64,
+    "clip": 0.2,
+    "entropy": 0.01,
+    "critic_coefficient": 0.5,
+    "norm_clip": 1,
+    "gamma": 1,
+    "lambda": 1,
+    "selection": "fixed final update, no evaluation-based selection; no pretrained or Taillard-fine-tuned weights"
+  },
+  "evaluation": {
+    "set": "Original 30 shared random 15x15 test instances",
+    "mode": "one deterministic greedy schedule per model/instance",
+    "historic": "The three previously published 30-seed configurations are reused weight for weight."
+  },
+  "statistics": {
+    "contrasts": [
+      [
+        "t4",
+        "ma"
+      ],
+      [
+        "t4",
+        "m2"
+      ],
+      [
+        "t4",
+        "fg"
+      ],
+      [
+        "t4",
+        "m4"
+      ],
+      [
+        "t4",
+        "t1"
+      ],
+      [
+        "t4",
+        "t8"
+      ],
+      [
+        "t4",
+        "t16"
+      ],
+      [
+        "t4",
+        "t32"
+      ]
+    ],
+    "difference": "T4 minus comparator makespan, negative favors T4",
+    "estimand": "equally weighted paired mean over seeds and test cases",
+    "interval": "Two-way crossed percentile bootstrap; independently resample 30 seed indices and 30 instance indices with replacement, share both index vectors across arms",
+    "resamples": 50000,
+    "bootstrap_seed": 20261125,
+    "test": "Two-sided exact sign-flip test on the 30 paired seed means conditional on the 30 cases; count all 2^30 sign assignments using two sets of partial sums.",
+    "multiplicity": "Holm separately for the four component comparisons and the four horizon comparisons in this extended analysis. The earlier two-contrast family remains in its original release.",
+    "direction": "two-sided regardless of observed effect"
+  },
+  "prior_report": "https://github.com/zs945/emdrl-taillard-experiments/tree/b25f8b5b1006a2ba2c4ced6be9141b6c9fa36863/ablation/thirty-seeds",
+  "extension": "Six additional configurations, each trained from matched initialization for seed IDs 1-30. All nine configurations are evaluated on identical cases.",
+  "new_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "new_arms": [
+    "ma",
+    "m2",
+    "fg",
+    "t8",
+    "t16",
+    "t32"
+  ],
+  "manuscript_sha256": "3929327faf8bb7cb0f46f841feb3fd9fc510a5f8202c8c05220bfabc72bdf726",
+  "reused_arms": [
+    "m4",
+    "t1",
+    "t4"
+  ]
+}
