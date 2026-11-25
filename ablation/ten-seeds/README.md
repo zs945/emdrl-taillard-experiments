@@ -6,23 +6,6 @@ Each configuration uses the same ten training seed IDs (1–10). All 30 policies
 
 The [analysis plan](protocol.json) defines two comparisons, T4 minus the matched ANN and T4 minus T1. A negative difference favors T4. Each cell is one deterministic makespan for a seed and an instance. A 95% percentile interval uses 50,000 crossed bootstrap draws of seeds and instances, preserving the method pairing. The two-sided sign-flip test enumerates 1,024 assignments of signs to the ten paired seed means, conditional on these 30 instances. It assumes sign exchangeability of the seed differences under the null. The two p values receive the Holm correction. The bootstrap intervals are marginal 95% intervals for each contrast.
 
-[Historical observations](historical_observations.csv) are from the paper's original three seeds. The nine archived checkpoints were replayed on the same test instances. All 270 makespans and complete schedule hashes matched the original evaluation records. For the expanded experiment, seeds 1–3 are retrained alongside seven new seed IDs on the same backend. The historical rows are reported separately.
-
 [Inputs](inputs.json) give the 100 training instances and 30 evaluation instances, including their original identifiers, routes, durations and specification hashes. [Analysis code](analyse.py) produces both planned tests from the completed seed-by-instance matrix.
 
-## Results for the ten training seeds
-
-Each contrast uses ten paired training seeds and the same 30 cases. Negative makespan differences favor the four-step SNN.
-
-| Comparator | Mean makespan difference | 95% interval | Two-sided p | Holm-adjusted p |
-| --- | ---: | ---: | ---: | ---: |
-| Matched ANN | -7.69 | [-25.64, 9.82] | 0.3672 | 0.7344 |
-| One-step SNN | -2.86 | [-16.23, 11.36] | 0.6055 | 0.7344 |
-
-[Full precision results](results/contrasts.csv), [900 paired observations](results/observations.csv), [seed means](results/paired_seed_means.csv), [30 final models](weights/index.csv), [training updates](training/updates.csv), and [training episodes](training/trajectories.csv).
-
-To reproduce the statistics, run the following command in this folder with NumPy installed.
-
-```sh
-python analyse.py --observations results/observations.csv --out reproduced
-```
+[Model weights](weights/index.csv) · [Training updates](training/updates.csv) · [Training trajectories](training/trajectories.csv).

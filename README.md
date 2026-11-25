@@ -19,7 +19,7 @@ The earlier manuscript procedure selected a separate checkpoint for each size us
 
 ## Satellite assembly and ablation studies
 
-The [current random-case ablation comparison](ablation/random-031-060) uses cases R15_test_031 through R15_test_060. It includes [all 30 case definitions](ablation/random-031-060/inputs.json), [2,700 model observations](ablation/random-031-060/results/observations.csv) and five scheduling metrics. The [ablation index](ablation) also links the original studies on cases 001 through 030.
+[Ablation cases 0-29 and results](ablation/random-cases-0-29) · [Ablation archive](ablation)
 
 The [OreSat 0 satellite assembly experiment](oresat/fixed50) provides the fixed-endpoint policy, 50 training updates and all 40 paired test schedules.
 
