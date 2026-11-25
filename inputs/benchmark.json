@@ -1,0 +1,422 @@
+[
+  {
+    "instance": "ta01",
+    "set": "validation",
+    "path": "validation/ta01.txt",
+    "sha256": "1ac1ebb9a77e42b302d97fe42da9f3330b3b2badd2aadfc57b248581ae0d9d3f"
+  },
+  {
+    "instance": "ta02",
+    "set": "validation",
+    "path": "validation/ta02.txt",
+    "sha256": "e91ea62669dd484698446273ddf3da919111aa86fd30bdc5158977f32119145f"
+  },
+  {
+    "instance": "ta11",
+    "set": "validation",
+    "path": "validation/ta11.txt",
+    "sha256": "1373fe6be26450b82eac3029e56759acbaa000ee382389c664561310b53604db"
+  },
+  {
+    "instance": "ta12",
+    "set": "validation",
+    "path": "validation/ta12.txt",
+    "sha256": "1e56ba5d360e2b29059d02a11edc6c41db1d3d2fa6cf921ba4a12e052408a80c"
+  },
+  {
+    "instance": "ta21",
+    "set": "validation",
+    "path": "validation/ta21.txt",
+    "sha256": "ab078d2012e846bcf83ae22d8e7134f5b9fea1915dc88fb99dcb6f2a8d62fc4e"
+  },
+  {
+    "instance": "ta22",
+    "set": "validation",
+    "path": "validation/ta22.txt",
+    "sha256": "3fbad537bef0d7d3dafa0f9002f633d04e96a194f4241cffd68643e08646612a"
+  },
+  {
+    "instance": "ta31",
+    "set": "validation",
+    "path": "validation/ta31.txt",
+    "sha256": "61b869ee2fda89669adf72e182ff6b396b7693966e4c45a2e1ce028908d2b379"
+  },
+  {
+    "instance": "ta32",
+    "set": "validation",
+    "path": "validation/ta32.txt",
+    "sha256": "ce971ac3c71d05f74fb9aae8a6326cf2b7bf672899348208648c892d88d110d5"
+  },
+  {
+    "instance": "ta41",
+    "set": "validation",
+    "path": "validation/ta41.txt",
+    "sha256": "6fb6d12d1a6430ab55500bb39bed1a4613fd88fe5ca2b7797287912be9009353"
+  },
+  {
+    "instance": "ta42",
+    "set": "validation",
+    "path": "validation/ta42.txt",
+    "sha256": "8ffe0e56dfa8cc7aaa4e1452d20604e3ad6ad0173ba1171e2ee7b73c938d5734"
+  },
+  {
+    "instance": "ta51",
+    "set": "validation",
+    "path": "validation/ta51.txt",
+    "sha256": "6f45a5b8cc0d8cf0c81f55c9d78e3448d6d17a2526b40102fbacf9970c817dc4"
+  },
+  {
+    "instance": "ta52",
+    "set": "validation",
+    "path": "validation/ta52.txt",
+    "sha256": "8514b2e30a92defeb05eaa93617fe783b6e4eb7f48d0018a7f89261d64bb9626"
+  },
+  {
+    "instance": "ta61",
+    "set": "validation",
+    "path": "validation/ta61.txt",
+    "sha256": "1357cf44e8defcca3f7b84e9b01ca869629643bdda18be8aa39f5f8e24e258ec"
+  },
+  {
+    "instance": "ta62",
+    "set": "validation",
+    "path": "validation/ta62.txt",
+    "sha256": "264dd22d80127c706ac4024d24de1ed8f4832ea3e4e57cad47025804b35c05e1"
+  },
+  {
+    "instance": "ta03",
+    "set": "A2",
+    "path": "A2/ta03.txt",
+    "sha256": "6f0dcaf759fcffb98950a1f7b9aa244a18754416d4911554f5c0334adbcf9881"
+  },
+  {
+    "instance": "ta04",
+    "set": "A2",
+    "path": "A2/ta04.txt",
+    "sha256": "2b43732352e723de510939aa35a7f15e98b01f5676541d3a0f150d82619d039f"
+  },
+  {
+    "instance": "ta05",
+    "set": "A2",
+    "path": "A2/ta05.txt",
+    "sha256": "b24cd0c3ac5cc8a767e8643d6b697053f2e99d98e72778c7641b8cc6955f6807"
+  },
+  {
+    "instance": "ta06",
+    "set": "A2",
+    "path": "A2/ta06.txt",
+    "sha256": "61d29abad72dccc35436203b568a768f6cec34f77159758666d600cdb8bc6cec"
+  },
+  {
+    "instance": "ta07",
+    "set": "A2",
+    "path": "A2/ta07.txt",
+    "sha256": "621b57cedb692dae102d9a95c3175ce1ccbce6b2dbe2cb68dd8e3605a6eb9535"
+  },
+  {
+    "instance": "ta08",
+    "set": "A2",
+    "path": "A2/ta08.txt",
+    "sha256": "5e802a55b17fafc7f1e517d1026af15a31470a905ee18f7632783b1e6174ede2"
+  },
+  {
+    "instance": "ta09",
+    "set": "A2",
+    "path": "A2/ta09.txt",
+    "sha256": "c0e3834c266d8b6fd9c02fc6ff83331f0c1746cfd9aad37b089b44d127097080"
+  },
+  {
+    "instance": "ta10",
+    "set": "A2",
+    "path": "A2/ta10.txt",
+    "sha256": "ed8ef26f6c963c236265f5f3329ebd901c67d867885341b0a448f5825db2e22f"
+  },
+  {
+    "instance": "ta13",
+    "set": "A2",
+    "path": "A2/ta13.txt",
+    "sha256": "aa0d10c6a5ce824513959f38afb8b3a706de1036ecc4a72a641b59fdff9f16f1"
+  },
+  {
+    "instance": "ta14",
+    "set": "A2",
+    "path": "A2/ta14.txt",
+    "sha256": "8284e00c685c1d0ae3c96278a89d3e1f5201ed26f215a5699bb2c745700acd30"
+  },
+  {
+    "instance": "ta15",
+    "set": "A2",
+    "path": "A2/ta15.txt",
+    "sha256": "87e66cedea85dd08c9e3478d8059e8bb34a826e31d11d4b7fec08252e432c3f4"
+  },
+  {
+    "instance": "ta16",
+    "set": "A2",
+    "path": "A2/ta16.txt",
+    "sha256": "dc1b59230f418465396b4915cf33f16a917ca5bf73961ec1970974aff88cda5d"
+  },
+  {
+    "instance": "ta17",
+    "set": "A2",
+    "path": "A2/ta17.txt",
+    "sha256": "6144228cc545637be4e81a3c3d58c6ebadb529c1a3ec93f0de2d36f4a58ce2f9"
+  },
+  {
+    "instance": "ta18",
+    "set": "A2",
+    "path": "A2/ta18.txt",
+    "sha256": "78ae043a569db4813996c4c57ee5d2e5ccb4f7789f55d5432c8bcf7908cf7bff"
+  },
+  {
+    "instance": "ta19",
+    "set": "A2",
+    "path": "A2/ta19.txt",
+    "sha256": "501dcfd58f166598ed8c444f5e5fd1144daef4949f204202e9b5c342ed872333"
+  },
+  {
+    "instance": "ta20",
+    "set": "A2",
+    "path": "A2/ta20.txt",
+    "sha256": "65258df9b2d9eafbc68552ce804f3107b78ba9d408a0a7fded38c3008fe04e76"
+  },
+  {
+    "instance": "ta23",
+    "set": "A2",
+    "path": "A2/ta23.txt",
+    "sha256": "6cdfc33466fccc43202d44e69f6a738e2569af09da127a783c86bd515118f5df"
+  },
+  {
+    "instance": "ta24",
+    "set": "A2",
+    "path": "A2/ta24.txt",
+    "sha256": "740afa6e1679cc6deaeb23e399abd27a3d72369ac11b1f43853fff2f79cedc56"
+  },
+  {
+    "instance": "ta25",
+    "set": "A2",
+    "path": "A2/ta25.txt",
+    "sha256": "5e4cff64ebd9f38da67d57b899824ac4a5996f3c2ec3d3931ebe43e093437a4b"
+  },
+  {
+    "instance": "ta26",
+    "set": "A2",
+    "path": "A2/ta26.txt",
+    "sha256": "30e68d0aa75f276b5474a731237f24b3bf1db3929cd677443fc620658370568d"
+  },
+  {
+    "instance": "ta27",
+    "set": "A2",
+    "path": "A2/ta27.txt",
+    "sha256": "a5f249e8880a8a054eca6cfdf5b48d69fbd07727aed0803e6195b64fd4c1d957"
+  },
+  {
+    "instance": "ta28",
+    "set": "A2",
+    "path": "A2/ta28.txt",
+    "sha256": "790532d87c58afd55fa4b610fec6a6802fc4255d5c2ecc6d5de355804973496f"
+  },
+  {
+    "instance": "ta29",
+    "set": "A2",
+    "path": "A2/ta29.txt",
+    "sha256": "025d4eb49b2bb32401f0b44b4c05103b4f855d463dcf7a8fb6f697716729f4dd"
+  },
+  {
+    "instance": "ta30",
+    "set": "A2",
+    "path": "A2/ta30.txt",
+    "sha256": "39b6ac75a46d95bd1818b86a082f83c204458017a09a7b9f3e7bd4ca699fb654"
+  },
+  {
+    "instance": "ta33",
+    "set": "A2",
+    "path": "A2/ta33.txt",
+    "sha256": "1693990644145e888f59bf13d266b09a42d591210fde53fcf851613151b46b3b"
+  },
+  {
+    "instance": "ta34",
+    "set": "A2",
+    "path": "A2/ta34.txt",
+    "sha256": "a95d730d4e62d5c04a2c9e80f79a9165befc6f2ceabb7f22eb4d4fd2dea7437b"
+  },
+  {
+    "instance": "ta35",
+    "set": "A2",
+    "path": "A2/ta35.txt",
+    "sha256": "b9a79291be6eea02dc960b4c359dc350cca688fd652077d942a550f8e70be54a"
+  },
+  {
+    "instance": "ta36",
+    "set": "A2",
+    "path": "A2/ta36.txt",
+    "sha256": "6c15c4dbbd0fd9644cd18f850df4ca0cf10c6351436c86d7bc52b1372b2ee4b6"
+  },
+  {
+    "instance": "ta37",
+    "set": "A2",
+    "path": "A2/ta37.txt",
+    "sha256": "498ece4a6b02cbbef9090df0b4228baf7250260fa6c739f88d18a2cbfd2ad77f"
+  },
+  {
+    "instance": "ta38",
+    "set": "A2",
+    "path": "A2/ta38.txt",
+    "sha256": "3485d05452c4dcf0334a13f052025c8b3b4ccdf22c029034d0c4f82593c4b2a3"
+  },
+  {
+    "instance": "ta39",
+    "set": "A2",
+    "path": "A2/ta39.txt",
+    "sha256": "a5d8273226ac8e0a7235241fbc1bd1d953f548e9886aadae55492fd45232cb15"
+  },
+  {
+    "instance": "ta40",
+    "set": "A2",
+    "path": "A2/ta40.txt",
+    "sha256": "651f221881fe028e63adb14df4d6f7a98e9ac438196a1408d2d1cafb7c40c3a1"
+  },
+  {
+    "instance": "ta43",
+    "set": "A2",
+    "path": "A2/ta43.txt",
+    "sha256": "d1b001bec8c78ea0eb3274a37be5411aa7175d1205c11d55e8e4cba36b1672dc"
+  },
+  {
+    "instance": "ta44",
+    "set": "A2",
+    "path": "A2/ta44.txt",
+    "sha256": "c23b084043b271c21923b8b4e296e3825b89f6c12ba52abaed10b140663d06ca"
+  },
+  {
+    "instance": "ta45",
+    "set": "A2",
+    "path": "A2/ta45.txt",
+    "sha256": "6111fa3d00437c67984de3e41d0965c2c34667306bf0803f1a8f22b3ced646c7"
+  },
+  {
+    "instance": "ta46",
+    "set": "A2",
+    "path": "A2/ta46.txt",
+    "sha256": "eaec2a0819692dd17dc05f8a8c91b356167fbe752e7a5508952f94c78801cb16"
+  },
+  {
+    "instance": "ta47",
+    "set": "A2",
+    "path": "A2/ta47.txt",
+    "sha256": "a6eb269a55f49b9c7be51e3498018b4c1af57b32c3fffab06fb2c527b0490dea"
+  },
+  {
+    "instance": "ta48",
+    "set": "A2",
+    "path": "A2/ta48.txt",
+    "sha256": "b7e33ce91ff303e9b900b23cdf0c9d244972993c4541cccea20379a9fcf4133f"
+  },
+  {
+    "instance": "ta49",
+    "set": "A2",
+    "path": "A2/ta49.txt",
+    "sha256": "19f331475e1883ee53a8c175cc84263b2230cc1ca3ce74f492385505012538c6"
+  },
+  {
+    "instance": "ta50",
+    "set": "A2",
+    "path": "A2/ta50.txt",
+    "sha256": "c03af7bdc6202bfb8b5c6d922e9f15f9753f229c6297df97ef9dad59cdefe0a6"
+  },
+  {
+    "instance": "ta53",
+    "set": "A2",
+    "path": "A2/ta53.txt",
+    "sha256": "fe26c31a8bf35037abf452115c2015792502699d0ac9f4783875cd7525e9e8a2"
+  },
+  {
+    "instance": "ta54",
+    "set": "A2",
+    "path": "A2/ta54.txt",
+    "sha256": "b4ba12d9834a54962f6f0a5afe8e60833a4406c4acaad1a19b9e9c6f900303ca"
+  },
+  {
+    "instance": "ta55",
+    "set": "A2",
+    "path": "A2/ta55.txt",
+    "sha256": "80cd6ae62c5dc2fd75b3541de8a94efd2acfb927dff00cca5242515f872f70a0"
+  },
+  {
+    "instance": "ta56",
+    "set": "A2",
+    "path": "A2/ta56.txt",
+    "sha256": "4f01f8a74f1bee23336a24c7d11b4094e3a3b5e88551056dde79ff8998967d7d"
+  },
+  {
+    "instance": "ta57",
+    "set": "A2",
+    "path": "A2/ta57.txt",
+    "sha256": "70a255461236cca584ddf8808a6a59a0c68e6b096f338b5c5a5d391e56f2789d"
+  },
+  {
+    "instance": "ta58",
+    "set": "A2",
+    "path": "A2/ta58.txt",
+    "sha256": "69491b4868485e0f9c36aa868a11a94286afb3f92a7e8584d2b3cddff6d2ba4a"
+  },
+  {
+    "instance": "ta59",
+    "set": "A2",
+    "path": "A2/ta59.txt",
+    "sha256": "d54d6c40c82d4cd2de085857dfdc7c0bf1dc94cb5c9f278f806a586673a57cf5"
+  },
+  {
+    "instance": "ta60",
+    "set": "A2",
+    "path": "A2/ta60.txt",
+    "sha256": "caddf81d0ec0087b9a9bb6dece084b9ae703e6568c0ce69756703958734c015b"
+  },
+  {
+    "instance": "ta63",
+    "set": "A2",
+    "path": "A2/ta63.txt",
+    "sha256": "4caa3f4a650474da6a41a5751f9bdd4185664fc90a2ee5f3ce51faa16918ce70"
+  },
+  {
+    "instance": "ta64",
+    "set": "A2",
+    "path": "A2/ta64.txt",
+    "sha256": "2e2e7ec535ccdf5d3fdabd6e01b06e20c15c3b18977606922ad89292021fc767"
+  },
+  {
+    "instance": "ta65",
+    "set": "A2",
+    "path": "A2/ta65.txt",
+    "sha256": "1f3d43bdbad435272a2e0093d50b0aa15ad98e82e38bd00c832b17388858c9e2"
+  },
+  {
+    "instance": "ta66",
+    "set": "A2",
+    "path": "A2/ta66.txt",
+    "sha256": "caab48018e51bf7c1e0464fb47d3233af3f67377f5fff43aa81c63e2c8b3a8dd"
+  },
+  {
+    "instance": "ta67",
+    "set": "A2",
+    "path": "A2/ta67.txt",
+    "sha256": "f70eeb8fca0604b948959fbe6f137ccd2de49182860e79d07acba06303d549cf"
+  },
+  {
+    "instance": "ta68",
+    "set": "A2",
+    "path": "A2/ta68.txt",
+    "sha256": "dceb082a70e6e3833650c8a1a219a6abf390c1850419dcbf1c4b14bafd1e7a39"
+  },
+  {
+    "instance": "ta69",
+    "set": "A2",
+    "path": "A2/ta69.txt",
+    "sha256": "a30c5b04f9fca1f57f4a515ce7e1a84cf6524903b6289ee17004dba624eb037c"
+  },
+  {
+    "instance": "ta70",
+    "set": "A2",
+    "path": "A2/ta70.txt",
+    "sha256": "953e35026b9ecf505cc8e19979830ea5152d06dd1a8418597bce0d19ad31325a"
+  }
+]

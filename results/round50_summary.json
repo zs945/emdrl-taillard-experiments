@@ -1,0 +1,17 @@
+{
+  "validation": {
+    "cases": 14,
+    "strict_first": 7,
+    "tied_first": 0
+  },
+  "A2": {
+    "cases": 56,
+    "strict": 19,
+    "tied": 0,
+    "top_two": 53,
+    "mean_makespan": 2217.089285714286,
+    "independent_replays": 56,
+    "result_table_sha256": "a027991dd3ea53406e24641faddd47d2a413f3d77e9eb99e718c0cd0e37b051d",
+    "source_digest": "b51fa0350b15bf8bb43db5cb22976c35d9b26aba1487a0b6437761a392bc1578"
+  }
+}
