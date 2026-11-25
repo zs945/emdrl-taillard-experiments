@@ -1,0 +1,68 @@
+{
+  "test_count": 40,
+  "results": {
+    "satellite50": {
+      "mean": 360.8,
+      "sd": 12.543667316362857,
+      "min": 336.0,
+      "max": 386.0,
+      "min_trials": [
+        19
+      ],
+      "figure15": 344.0
+    },
+    "pretrained": {
+      "mean": 418.7,
+      "sd": 13.222358686360359,
+      "min": 396.0,
+      "max": 442.0,
+      "min_trials": [
+        23
+      ],
+      "figure15": 428.0
+    },
+    "satellite96": {
+      "mean": 360.95,
+      "sd": 12.65508917595139,
+      "min": 337.0,
+      "max": 386.0,
+      "min_trials": [
+        18
+      ],
+      "figure15": 337.0
+    },
+    "paper": {
+      "mean": 360.45,
+      "sd": 12.217998493185664,
+      "min": 336.0,
+      "max": 386.0,
+      "min_trials": [
+        18
+      ],
+      "figure15": 336.0
+    }
+  },
+  "paired": {
+    "satellite50": {
+      "lower": 0,
+      "equal": 40,
+      "higher": 0
+    },
+    "pretrained": {
+      "lower": 40,
+      "equal": 0,
+      "higher": 0
+    },
+    "satellite96": {
+      "lower": 17,
+      "equal": 6,
+      "higher": 17
+    },
+    "paper": {
+      "lower": 15,
+      "equal": 8,
+      "higher": 17
+    }
+  },
+  "passed": true
+}

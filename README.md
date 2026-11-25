@@ -17,6 +17,10 @@ The earlier manuscript procedure selected a separate checkpoint for each size us
 
 [Table 8 results](results/round50_validation14.csv) compare the final policy with ten reported comparator configurations. NR marks an unreported value. [Table A2 results](results/round50_A2.csv) use LRPT, L2D, SLIM-GM, UG-single and UG-comp. A strict first requires a lower makespan than every reported comparator for that instance. Model validation and repeated monitoring should be taken into account when interpreting the benchmark results.
 
+## Satellite assembly and ablation studies
+
+The [OreSat 0 satellite assembly experiment](oresat/fixed50) provides the fixed-endpoint policy, 50 training updates and all 40 paired test schedules. The [30-seed comparison](ablation/thirty-seeds) and [full ablation protocol](ablation/full-re1-30) document the component and simulation-horizon studies.
+
 ## Archive contents
 
 - [Per-update records](training/updates.csv) give the number of transitions, Adam steps, validation summaries and original record hashes. [Training trajectories](training/trajectories.csv) identify the sampled instance, makespan and schedule hash for each episode in chronological order.
