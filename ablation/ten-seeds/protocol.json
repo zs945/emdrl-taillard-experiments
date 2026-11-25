@@ -1,0 +1,68 @@
+{
+  "design": "Paired seed extension of the paper's original 15x15 ablation, separate from the Taillard fine-tuning experiment.",
+  "arms": [
+    "t4",
+    "m4",
+    "t1"
+  ],
+  "labels": {
+    "t4": "SNN, T=4, conflict GAT",
+    "m4": "matched ANN, conflict GAT",
+    "t1": "SNN, T=1, conflict GAT"
+  },
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "train": {
+    "size": "15x15",
+    "updates": 256,
+    "episodes_per_update": 4,
+    "episodes_per_model": 1024,
+    "pool": 100,
+    "episode_sampling": "Python Random(7000 + seed), uniform with replacement, same ordered draws within each seed",
+    "lr": 0.001,
+    "ppo_epochs": 10,
+    "minibatch": 64,
+    "clip": 0.2,
+    "entropy": 0.01,
+    "critic_coefficient": 0.5,
+    "norm_clip": 1,
+    "gamma": 1,
+    "lambda": 1,
+    "selection": "fixed final update, no evaluation-based selection; no pretrained or Taillard-fine-tuned weights"
+  },
+  "evaluation": {
+    "set": "Original 30 shared random 15x15 test instances",
+    "mode": "one deterministic greedy schedule per model/instance",
+    "historic": "Re-evaluate the nine archived CPU-trained final models separately. Refit seeds 1–3 as well as 4–10 for the primary uniform CUDA-optimization cohort."
+  },
+  "statistics": {
+    "contrasts": [
+      [
+        "t4",
+        "m4"
+      ],
+      [
+        "t4",
+        "t1"
+      ]
+    ],
+    "difference": "T4 minus comparator makespan, negative favors T4",
+    "estimand": "equally weighted paired mean over seeds and test cases",
+    "interval": "Two-way crossed percentile bootstrap; independently resample 10 seed indices and 30 instance indices with replacement, share both index vectors across arms",
+    "resamples": 50000,
+    "bootstrap_seed": 20261125,
+    "test": "Two-sided exact sign-flip test on the ten paired seed means over the fixed 30 instances; enumerate 1024 sign assignments",
+    "multiplicity": "Holm over the two planned contrasts",
+    "direction": "two-sided regardless of observed effect"
+  }
+}
