@@ -1,0 +1,215 @@
+{
+  "architecture": {
+    "node_features": 10,
+    "attention_heads": 4,
+    "features_per_head": 8,
+    "node_embedding": 32,
+    "attention": "GATConv with concatenated heads and ELU activation",
+    "attention_dropout": 0.0,
+    "actor_layers": [
+      32,
+      64,
+      2
+    ],
+    "critic_layers": [
+      32,
+      64,
+      1
+    ],
+    "residual_layers": [
+      32,
+      1
+    ],
+    "internal_steps": 16,
+    "spike_threshold": 1.0,
+    "reset_voltage": 0.0,
+    "readout_tau": 2.0,
+    "readout_decay_input": true,
+    "layer_normalization": false,
+    "hidden_relu": false,
+    "priorities": "final membrane output 1 minus output 0 plus continuous residual",
+    "state_value": "arithmetic mean of the critic outputs for candidate operations",
+    "evaluation": "reset membrane states between dispatch decisions; argmax within each eligible machine group"
+  },
+  "tensor_shapes": {
+    "actor.log_std": [
+      1,
+      2
+    ],
+    "actor.critic.0.weight": [
+      64,
+      32
+    ],
+    "actor.critic.0.bias": [
+      64
+    ],
+    "actor.critic.4.weight": [
+      1,
+      64
+    ],
+    "actor.critic.4.bias": [
+      1
+    ],
+    "actor.actor.0.weight": [
+      64,
+      32
+    ],
+    "actor.actor.0.bias": [
+      64
+    ],
+    "actor.actor.4.weight": [
+      2,
+      64
+    ],
+    "actor.actor.4.bias": [
+      2
+    ],
+    "gat.gat.att_src": [
+      1,
+      4,
+      8
+    ],
+    "gat.gat.att_dst": [
+      1,
+      4,
+      8
+    ],
+    "gat.gat.bias": [
+      32
+    ],
+    "gat.gat.lin.weight": [
+      32,
+      10
+    ],
+    "residual.weight": [
+      1,
+      32
+    ],
+    "residual.bias": [
+      1
+    ]
+  },
+  "ablation": {
+    "training": {
+      "size": "15x15",
+      "updates": 256,
+      "episodes_per_update": 4,
+      "episodes_per_model": 1024,
+      "pool": 100,
+      "episode_sampling": "Python Random(7000 + seed), uniform with replacement, same ordered draws within each seed",
+      "lr": 0.001,
+      "ppo_epochs": 10,
+      "minibatch": 64,
+      "clip": 0.2,
+      "entropy": 0.01,
+      "critic_coefficient": 0.5,
+      "norm_clip": 1,
+      "gamma": 1,
+      "lambda": 1,
+      "selection": "fixed final update, no evaluation-based selection; no pretrained or Taillard-fine-tuned weights"
+    },
+    "training_seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "shared_initialization": "ablation/seed-03.pt"
+  },
+  "taillard": {
+    "starting_weights": "ablation/seed-03.pt",
+    "seed": 3,
+    "learning_rate": 0.001,
+    "sizes": [
+      [
+        15,
+        15
+      ],
+      [
+        20,
+        15
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        30,
+        15
+      ],
+      [
+        30,
+        20
+      ],
+      [
+        50,
+        15
+      ],
+      [
+        50,
+        20
+      ]
+    ],
+    "instances_per_size": 100,
+    "distinct_instances_per_update_per_size": 32,
+    "episodes_per_update": 224,
+    "ppo": {
+      "epochs": 10,
+      "minibatch": 64,
+      "clip": 0.2,
+      "entropy": 0.01,
+      "value_weight": 0.5,
+      "grad_norm": 1.0,
+      "gamma": 1.0,
+      "gae_lambda": 1.0
+    },
+    "updates": 50,
+    "optimizer": "Adam",
+    "selected_update": 45,
+    "selection": "Lowest arithmetic mean makespan on 14 selection cases, evaluated retrospectively over all 50 updates.",
+    "selection_instances": [
+      "ta01",
+      "ta02",
+      "ta11",
+      "ta12",
+      "ta21",
+      "ta22",
+      "ta31",
+      "ta32",
+      "ta41",
+      "ta42",
+      "ta51",
+      "ta52",
+      "ta61",
+      "ta62"
+    ],
+    "selection_mean": 2245.285714285714
+  },
+  "oresat": {
+    "starting_weights": "taillard/update-045.pt",
+    "seed": 3,
+    "optimizer": "new Adam",
+    "learning_rate": 0.001,
+    "ppo": {
+      "epochs": 10,
+      "minibatch": 64,
+      "clip": 0.2,
+      "entropy": 0.01,
+      "value_weight": 0.5,
+      "grad_norm": 1.0,
+      "gamma": 1.0,
+      "gae_lambda": 1.0
+    },
+    "training_pool_size": 100,
+    "episodes_per_update": 32,
+    "updates": 50,
+    "reported_update": 50,
+    "processing_time_observation": "nominal before start; clipped nominal-minus-elapsed while running; actual duration only on completion"
+  }
+}

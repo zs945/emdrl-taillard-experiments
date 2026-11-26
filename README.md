@@ -1,5 +1,9 @@
 # EMDRL training records and Taillard benchmark evaluation
 
+[Current manuscript: EMDRL network parameters, inference code and T=16 checkpoints](models/emdrl-t16)
+
+## Fixed-update T=4 archive
+
 This repository archives the single shared EMDRL policy used in the fixed-update experiment. The model starts from seed 3 of the paper's full spiking ablation model (*T* = 4), pretrained on random 15 × 15 instances. One set of weights serves all seven problem sizes. The reported checkpoint is the end of PPO fine-tuning update 50. At each dispatch event, the policy chooses the highest-scoring eligible operation for each idle machine. Each reported makespan comes from one deterministic schedule.
 
 ## Training and model selection
